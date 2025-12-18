@@ -15,4 +15,11 @@ int resolution_equation(float a, float b, float c, float *x1, float *x2);
 //Definition d'une fonction de detection de nombre premier
 int premier(int valeur);
 
+//Definition d'une structure de point et d'une fonction de calcul de distance entre deux points
+typedef struct{
+    float x;
+    float y;
+} Point;
+float distance(Point p1, Point p2);
+
 #endif

@@ -3,8 +3,8 @@
 
 #include "bibliotheque.h"
 
-int main(void)
-{
+int main(void){
+    
     int result = power(2, 3);
     printf("2³ == %d\n", result);
 
@@ -13,12 +13,11 @@ int main(void)
     printf("6! == %d\n", result);
 
 
-    int first = 10;
-    int second = 20;
-    printf("first = %d # second = %d \n", first, second);
-    permutation(&first, &second);
-    printf("first = %d # second = %d", first, second);
-
+    int a = 10;
+    int b = 20;
+    printf("premier = %d et second = %d \n", a, b);
+    permutation(&a, &b);
+    printf("premier = %d et second = %d \n", a, b);
     
     float x1, x2;
     int nb;
@@ -45,6 +44,13 @@ int main(void)
     }
 
 
+    Point A, B;
+    printf("Entrez les coordonnees du point A (x y) : ");
+    scanf("%f %f", &A.x, &A.y);
+    printf("Entrez les coordonnees du point B (x y) : ");
+    scanf("%f %f", &B.x, &B.y);
+    float d = distance(A, B);
+    printf("La distance entre A et B est : %.2f\n", d);
 
     return EXIT_SUCCESS;
 }
